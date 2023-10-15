@@ -1,0 +1,11 @@
+mixin form(modifier)
+  section.form&attributes(attributes)
+    .form__content
+      .form__inner 
+        h1.form__title Поиск начислений
+        form.form__form
+          input(type="text" placeholder="Введите данные для поиска").form__input
+          button(type="submit").form__btn Найти
+          button(type="submit").form__search
+            include img/ic-search.svg
+        p.form__text Чем больше параметров введено, тем полнее результаты поиска

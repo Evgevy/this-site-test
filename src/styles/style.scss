@@ -1,0 +1,60 @@
+@import 'mixins';
+
+
+
+/* Plugins */
+
+
+
+/* Blocks */
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@import './src/blocks/header/header';
+@import './src/blocks/form/form';
+@import './src/blocks/services/services';
+@import './src/blocks/partners/partners';
+@import './src/blocks/footer/footer';
+@import './src/blocks/popup/popup';

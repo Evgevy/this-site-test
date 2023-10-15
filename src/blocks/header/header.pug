@@ -1,0 +1,28 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__content
+      .header__inner 
+        .header__burger 
+          .header__line 
+          .header__line
+          .header__line
+        .header__nav
+          .header__list-one
+            h3.header__title ЛИЧНЫЙ КАБИНЕТ
+            a(href="#!").header__link-enter Вход в Личный кабинет
+          .header__list-two 
+            h3.header__title КАК ЭТО РАБОТАЕТ
+            a(href="#!").header__link-one Условия использования сервиса
+            a(href="#!").header__link-one Способы оплаты
+            a(href="#!").header__link-one Часто задаваемые вопросы
+            a(href="#!").header__link-one Служба поддержки
+        .header__logo 
+          a(href="#!").header__link
+            include img/logo-site.svg
+        .header__help 
+          button(type="button").header__btn
+            include img/ic-help.svg
+          .header__modal(data-backdrop="true")
+            h4.header__title-modal Тел. поддержки
+            a(href="tel:+78001234567").header__link-phone 8 800 123-45-67
+            a(href="#!").header__link-modal Написать письмо

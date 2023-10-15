@@ -1,0 +1,17 @@
+mixin popup(modifier)
+  .popup.popup--hide 
+    .popup__content
+      h2.popup__title Введите логин и пароль<br>для входа в Личный кабинет
+      .popup__close 
+        include img/ic-close.svg
+      .popup__contacts 
+        form.popup__form 
+          input(type="text" placeholder="Логин" required).popup__login 
+          input(type="password" placeholder="Пароль" required).popup__pass
+          button(type="submit").popup__btn Войти
+      ul.popup__links 
+        li.popup__item
+          a(href="#!").popup__link Напомнить пароль
+        li.popup__item
+          a(href="#!").popup__link Регистрация
+    .popup__bg

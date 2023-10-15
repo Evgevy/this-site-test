@@ -1,0 +1,41 @@
+.footer {
+    background: #00468533;
+    &__content {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 0 40px;
+    }
+
+    &__years,
+    &__name {
+        font: 600 16px/22px Open Sans;
+        color: #000000;
+    }
+
+    @media screen and (max-width: 799px) {
+        &__inner {
+            flex-direction: column;
+            gap: 17px 0;
+            padding: 20px 0;
+        }
+
+        &__autor {
+            display: flex;
+            gap: 0 10px;
+        }
+
+        &__years,
+        &__name {
+            font: 600 13px/16px Open Sans;
+        }
+    }
+  
+}
